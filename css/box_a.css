@@ -1,0 +1,159 @@
+.box_a {
+    height: 250px;
+}
+
+.box_a1a {
+    height: 50px;
+    width: 100%;
+    background: #71b950;
+    position: fixed;
+    top: 0px;
+    z-index: 666666;
+}
+
+.box_a1a2 {
+    width: 80%;
+    min-width: 1100px;
+    margin: 0 auto;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dashboard {
+    flex-basis: 600px;
+    height: 50px;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+ul.main-list {
+    display: flex;
+}
+
+ul.sub-list {
+    align-items: center;
+}
+
+ul.main-list>li {
+    width: 175px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul.main-list>li>a {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+ul.main-list>li:hover>a {
+    font-size: 25px;
+    color: #ffe866;
+}
+
+ul.main-list>li>ul {
+    display: none;
+}
+
+ul.main-list>li:hover>ul {
+    display: block;
+    position: absolute;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+ul.main-list>li:hover>ul>li {
+    background: #71b950;
+    width: 175px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    border-left: 10px solid transparent;
+}
+
+ul.main-list>li:hover>ul>li a {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+ul.main-list>li:hover>ul>li:hover a {
+    font-size: 25px;
+    color: #ffe866;
+}
+
+.sub-list>li:hover::after {
+    content: "·";
+    position: absolute;
+    right: 10px;
+    color: #ffe866;
+    font-weight: bold;
+}
+
+.arrow-top {
+    height: 0px;
+    width: 0px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #71b950 transparent;
+}
+
+.box_a1a2_right {
+    display: flex;
+}
+
+.box_a1b {
+    position: absolute;
+    top: 50px;
+    height: 200px;
+    width: 100%;
+    background-color: #a2afa5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box_a1b2 {
+    width: 80%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+}
+
+.main_buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_buttons li {
+    width: 25%;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.main_buttons li:not(:first-child) {
+    border-left: 1px solid black;
+}
+
+.main_buttons li img {
+    max-width: 100%;
+    max-height: 130px;
+}
+
+.main_buttons li span {
+    font-size: 20px;
+    font-weight: bold;
+}

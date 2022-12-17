@@ -1,0 +1,16 @@
+.ratio_box {
+    width: 100%;
+    border: 5px dashed black;
+}
+
+.ratio_w2h1 {
+    padding-bottom: 50%;
+}
+
+.ratio_w1h1 {
+    padding-bottom: 100%;
+}
+
+.ratio_w1h2 {
+    padding-bottom: 200%;
+}
